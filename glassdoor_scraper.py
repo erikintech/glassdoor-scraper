@@ -9,7 +9,7 @@ import pandas as pd
 import time
 
 def get_jobs(url, num_jobs):
-	driver = webdriver.Firefox()
+	driver = webdriver.Firefox( executable_path="./driver/geckodriver" )
 	driver.get(url)
 	jobs = []
 
